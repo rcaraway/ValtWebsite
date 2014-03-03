@@ -6,47 +6,29 @@
             
             	<div class="site-slider-slider-one-image">
                 
-					<?php 
-                        if( of_get_option('slider_one_image') ){
-                            echo '<img class="" src="'.esc_url( of_get_option('slider_one_image') ).'" />';
-                        }else {
-                          	echo '<img class="" src="'.get_stylesheet_directory_uri().'/images/fetimg.png"  />';
-                       }
-                    ?>                 
-                
+					<img class="" src="/Valt/ValtWebsite/media/iphone5c.png"/>
+                    <
+                    <img id="trailerGif" src="/Valt/ValtWebsite/media/solidVideo.gif">
                 </div><!-- .site-slider-slider-one-image -->
                 
             	<div class="site-slider-slider-one-text">
                 
                 	<h1 class="site-slider-slider-one-text-heading">
-						<?php 
-                            if( of_get_option('slider_one_headline') ){
-                                 echo esc_html( of_get_option('slider_one_headline') );
-                            }else {
-								 _e('Responsive Business Theme',  'alexandria');
-                            }
-                       ?>                      
+						Password Keeping that Saves You Tons of Energy                  
                     </h1>
                     <p class="site-slider-slider-one-text-description">
-						<?php 
-                            if( of_get_option('slider_one_text') ){
-                               echo esc_html( of_get_option('slider_one_text') );
-                            }else {
-                               _e('You can change this text in Slider One settings tab of theme options page. Write something awesome to make your website ridiculously fabulous.',  'alexandria');
-                            }
-                        ?>                     
+                               Valt is a simple and speedy password manager.  No 
+                                other app allows you to enter credentials and login 
+                                with them faster.
+
+                                Valt uses autocompletion, instant form filling, auto 
+                                submitting, easy URL saving, and many other features 
+                                to get you back to living life. Valt’s ironclad security 
+                                keeps you worry-free.
+
                     </p>
-                    <p class="site-slider-slider-one-text-button">
-                        <a href="<?php if( of_get_option('slider_one_cta_link') ){ echo esc_url( of_get_option('slider_one_cta_link') );}else { echo '#';}?>">
-							<?php 
-                                if( of_get_option('slider_one_cta') ){
-                                    echo esc_attr( of_get_option('slider_one_cta') );
-                                }else {
-									_e('Continue Reading',  'alexandria');
-                                }
-                            ?>
-                        </a>                    
-                    </p>
+                    
+                    <p id="downloadButton"><a href="itms-apps://itunes.apple.com/app/id791566527?at=10l6dK">Download For Free</a></p>
                 
                 </div><!-- .site-slider-slider-one-text -->                
 

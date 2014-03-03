@@ -20,6 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper-one">
+    <img src="/Valt/ValtWebsite/media/gradientBack.png" id="backGradient">
 <div id="wrapper-two">
 <div id="wrapper-three">
 <div id="page" class="hfeed site">
@@ -37,56 +38,22 @@
     
     	<div class="responsive-container">
         
-        <?php if( !of_get_option('logo_layout_style') || of_get_option('logo_layout_style') == 'sbys' ) : ?>
         
         	<div class="site-header-half-width-logo">
     
                 <div class="site-branding">
                 	
-                    <?php if( of_get_option('logo_image') ) : ?>
-                    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo of_get_option('logo_image'); ?>" /></a>
-                    <?php else : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                        <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-                    <?php endif; ?>
-                    
+                    <ul id="headerList">                       
+                    <li><img id="appIcon" src="/Valt/ValtWebsite/media/webIcon.png"/> </li>
+                    <li><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Valt</a></h1></li>
+                    <li ><i><h2 id="devices">for iPhone and iPad</h2></i></li>
+                    </ul>
                 </div>
                 
             </div>
             
-            <div class="site-header-half-width-nav">
-    
-                <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'alexandria' ); ?>"><?php _e( 'Skip to content', 'alexandria' ); ?></a></div>
         
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-nav', 'fallback_cb' => 'alexandria_backupmenu'  ) ); ?>
-                </nav><!-- #site-navigation -->
-                
-            </div>                
-            
-        <?php else : ?>
-        
-            <div class="site-branding">
-            
-            	<?php if( of_get_option('logo_image') ) : ?>
-                	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo of_get_option('logo_image'); ?>" /></a>
-                <?php else : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                        <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-                <?php endif; ?>
-                
-            </div>
-                
-            
 
-            <nav id="site-navigation" class="main-navigation nav-border-top" role="navigation">
-                    <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'alexandria' ); ?>"><?php _e( 'Skip to content', 'alexandria' ); ?></a></div>
-        
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-nav', 'fallback_cb' => 'alexandria_backupmenu'  ) ); ?>
-            </nav><!-- #site-navigation --> 
-                
-        
-        <?php endif; ?>
             
     	</div><!-- #Responsive-Container -->            
             
