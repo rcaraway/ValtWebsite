@@ -28,18 +28,11 @@ and Blueprint http://www.blueprintcss.org/
 /* =Reset
 -------------------------------------------------------------- */
 
-html, body, div, span {
-	border: 0;
+html, body, div {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
-	margin: 0;
-	outline: 0;
-	background: #121212;
-	padding: 0;
-	vertical-align: baseline;
+	background: #1a1a1a;
 }
+
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
@@ -47,50 +40,14 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: #121212;
-	color: #000;
+	background: #1a1a1a;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
-	line-height: 1.75;
 	word-wrap:break-word;	
-}
-
-/* Headings */
-h1,h2,h3,h4,h5,h6 {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	line-height: 1.25;
-}
-
-h1{
-	font-size: 48px;
-	font-size: 4.8rem;
-}
-h2{
-	font-size: 36px;
-	font-size: 3.6rem;
-}
-h3{
-	font-size: 30px;
-	font-size: 3.0rem;
-}
-h4{
-	font-size: 26px;
-	font-size: 2.6rem;
-}
-h5{
-	font-size: 24px;
-	font-size: 2.4rem;
-}
-h6{
-	font-size: 20px;
-	font-size: 2.0rem;
-}
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+	background-image: url(http://i.imgur.com/zrthmFR.png);
+	background-repeat:no-repeat;
+	background-position: center center;
 }
 
 b, strong {
@@ -120,47 +77,8 @@ a:active {
 	text-decoration:underline;
 }
 
-/* Alignment */
-.alignleft {
-	float: left;
-	margin-right: 1.5em;
-}
-.alignright {
-	float: right;
-	margin-left: 1.5em;
-}
-.aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
-}
 
-/* Text meant only for screen readers */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-}
 
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
-}
 
 /* Clearing */
 .clear:before,
@@ -200,6 +118,7 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
+	z-index: -1;
 	right: 0;
 	top:200px;
 }
@@ -207,74 +126,52 @@ a:active {
 .responsive-container{
 	width:100%;
 }
-.header-social{
-	width:100%;
-	background:#000;
-	height:50px;
-	display:none;
-}
+
 .site-header{
-	width:100%;
-	text-align:center;
+	width:500px;
+	height: 80px;
+	float: right;
+	margin-right: 22.3%;
 }
+
 .site-slider{
 	width:100%;
 }
-.site-main{
-	width:100%;
-	padding:3.5% 0;
-}
+
 .content-container{
 	width:100%;
 }
-.full-page-content-area{
-	width:100%;
-	margin:5% 0;
-	float:left;
-}
-.content-area{
-	width:100%;
-	margin:5% 0;
-	float:left;
-}
-.site-content{
-	width:90%;
-	margin:0 5%;	
-}
-.widget-area{
-	width:100%;
-	margin:5% 0 0 0;	
-	float:left;
-	background:#E4E6E9;
-}
-.footer-social{
-	width:100%;
-	background:#333437;
-}
+
 .site-footer{
 	width:100%;
 	background:#1f2022;
 }
-.site-info{
-	float:left;
-	width:90%;
-	padding:5%;
-	color:#fff;
+
+#headerList
+{
+	margin-top: 16%;
+	width: 500px;
+	height: 80px;
 }
 
 #headerList li
 {
 	float:left;
 	list-style-type: none;
-    margin-left: 2px;
-    padding: 5px;
 }
 
 #devices
 {
 	color: #3b3a3a;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 30px;
    font-weight: 300;
+}
+
+#deviceList
+{
+	margin-left: 46px;
+	margin-top: 5px;
 }
 
 /* Logo Section
@@ -285,7 +182,6 @@ a:active {
 	float:left;	
 }
 .site-branding{
-	padding:7% 0;
 }
 .site-header-half-width-logo .site-branding{
 	text-align:center;
@@ -295,51 +191,42 @@ a:active {
 	height:auto;
 }
 .site-title a, .site-title a:visited{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	font-size: 60px;
-	font-size: 6.0rem;
 	color: #fff;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
 	text-decoration:none;
-	line-height:1.1;
 }
+
+#siteTitle
+{
+	margin-left: 18px;
+	margin-top: 6px;
+}
+
 .site-description{
 	color: #fff;
-	font-family: 'NobileRegular', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 }
-.site-header-half-width-nav{
-	width:100%;
-	margin:0;
-	float:left;
-	border-top:1px solid #000;
-}
-
-/* =Menu
------------------------------------------------ */
-
-
-	
 
 /* =Site-Header
 ----------------------------------------------- */
 
 .site-slider-custom-header{
 	width:100%;
-	margin:5% 0;
 	text-align:center;
 }
 .site-slider-custom-header img{
 	max-width:100%;
 }
-.site-slider-slider-one{
-	width:100%;
-	margin:7.9% 0;	
-}
 .site-slider-slider-one-image{
 	float:left;
 	width:90%;
-	margin:0 5%;
+	/*margin:0 5%;*/
 	text-align:center;
 }
 .site-slider-slider-one-image img{
@@ -349,7 +236,8 @@ a:active {
 .site-slider-slider-one-text{
 	float:left;
 	width:90%;
-	margin:0 5%;
+	margin: 0px;
+	padding: 0px;
 }
 .site-slider-slider-one-text-heading{
 	width:86%;
@@ -371,26 +259,7 @@ a:active {
 	color:#fff;
 	line-height:1.5;
 }
-.site-slider-slider-one-text-button{
-	width:86%;
-	margin:0 7% 0 7%;
-	padding:0 0 40px 0;
-	text-align:center;	
-}
-.site-slider-slider-one-text-button a{
-	font-family: 'TitilliumText22LRegular', sans-serif;
-	font-size:24px;
-	font-size:2.4rem;
-	color:#fff;	
-	border-bottom: 4px solid #000000;
-	background:#333437;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;	
-    display: inline-block;
-    padding: 15px 50px;
-	line-height:1.0;
-}
+.
 
 /* =Content
 ----------------------------------------------- */
@@ -666,18 +535,7 @@ object {
 .site-info p a:hover{
 	text-decoration:none;
 }
-.footer-search{
-	width:64%;
-	margin:20px auto 5px auto;	
-}
-.footer-search .search-field{
-	background:#2F2F2F !important;
-	color:#878786;
-}
-.footer-search .search-submit{
-	background:#000 !important;
-	color:#fff !important;
-}
+
 
 /* Responsive Rules
 ----------------------------------------------- */
@@ -742,8 +600,9 @@ and (min-width : 901px) {
 	width: 430px;
 	height: 88px;
 	font-size: 32px;
-	margin: 0 0 0 0;
+	margin: 22px auto 0 auto;
 	padding: 0 0 0 0;
+	line-height: 2.6em;
 	vertical-align: central;
 }
 
@@ -757,30 +616,55 @@ and (min-width : 901px) {
 }
 
 #downloadButton a:hover{
-	color: #fff;
+	box-shadow: 0px 0px 10px #592b55;
 	width: 430px;
 	height: 88px;
 	text-decoration: none;
 	display: block;
-	background-color: #ce62fb;
+	background-color: #bc37f3;
 	border-radius:10px;
 }
 
 .site-slider-slider-one-image{
 	float:left;
-	width:50%;
+	width:35%;
+	z-index: 40;
 	margin:0;
 }
 .site-slider-slider-one-text{
 	float:left;
-	width:46%;
-	margin:0 2%;	
+	width: 500px;
+	z-index: 40;
+	height: 500px;
+	background: #2d2c2c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2c2c 0%, #1a1a1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d2c2c), color-stop(100%,#1a1a1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2d2c2c 0%,#1a1a1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2d2c2c 0%,#1a1a1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2d2c2c 0%,#1a1a1a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2d2c2c 0%,#1a1a1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2c2c', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */
+	margin:90px 2% 0 2%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: inset 0px 1px 0px 0px #454545;
 }
 .site-slider-slider-one-text-heading{
 	text-align:left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin-top: 38px;
+	color: #dad5d5;
+	padding: 0 0 22px 0;
+	font-size: 27px;
 }
 .site-slider-slider-one-text-description{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	text-align:left;
+	color: #dad5d5;
+	padding: 0 0 10px 0;
 }
 .site-slider-slider-one-text-button{
 	text-align:left;	
@@ -795,13 +679,29 @@ and (min-width : 901px) {
 	margin:0;	
 }
 
+#BottomMenu li
+{
+	display: inline;
+	margin-left: 7%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	list-style-type: none;;
+	color: #272626;
+}
+
+#BottomMenu li a
+{
+	color: #373737;
+}
+
 .site-info{
-	width:40%;
+	width:100;
+	margin-left: auto;
+	margin-right: auto;
 	padding:5% 0;
 }
 .footer-widget-two{
 	width:30%;
-	padding:5% 0;
+
 }
 .footer-widget-three{
 	width:20%;
