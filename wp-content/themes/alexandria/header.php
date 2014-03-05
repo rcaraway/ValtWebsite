@@ -20,21 +20,32 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper-one">
-    <img src="http://i.imgur.com/zrthmFR.png" id="backGradient"/>
 <div id="wrapper-two">
 <div id="wrapper-three">
 <div id="page" class="hfeed site">
 	
        
-	<header  class="site-header">
-                    <ul id="headerList">  
-	                    <li><img id="appIcon" src="http://i.imgur.com/l00dgfa.png" title="Hosted by imgur.com"/>  </li>
-	                    <li id="siteTitle"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Valt</a></h1></li>
-	                    <li id="deviceList"><i><h2 id="devices">for iPhone and iPad</h2></i></li>
-                    </ul>
-	</header>
-    
-	<?php  get_template_part( 'slider' ); ?>
+    <div class="responsive-container">
+    	<header  class="site-header">
+                    <div id="headerInfo">
+                        <ul id="headerList">  
+    	                    <li><a href="<?php echo site_url()?>"><img id="appIcon" src="http://i.imgur.com/l00dgfa.png" title="Hosted by imgur.com"/> </a> </li>
+    	                    <li id="siteTitle"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Valt</a></h1></li>
+    	                    <li id="deviceList"><i><h2 id="devices">for iPhone and iPad</h2></i></li>
+                        </ul>
+                    </div>
+    	</header>
+    </div>
+
+    <?php if (!is_page()): ?>
+        <?php  get_template_part( 'slider' ); ?>
+        <style type="text/css">
+        #main
+        {
+            display: none;
+            position: absolute;;
+        } </style>
+    <?php endif; ?>
 
 	<div id="main" class="site-main">
     

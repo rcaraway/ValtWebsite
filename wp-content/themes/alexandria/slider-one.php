@@ -5,10 +5,11 @@
         	<div class="site-slider-slider-one">
             
             	<div class="site-slider-slider-one-image">
-                
-                    <img src="http://i.imgur.com/mlHhcIO.png" style="width:248px;height:512px; />
-                    <img src="http://i.imgur.com/qDNXTEk.gif" />
-                </div><!-- .site-slider-slider-one-image -->
+                    
+                    <img src="http://i.imgur.com/mlHhcIO.png" id="iphoneImage" />
+                    <img src="http://i.imgur.com/mnZ59Ji.gif" id="animatedGif" />
+
+                </div> <!-- .site-slider-slider-one-image -->
                 
             	<div class="site-slider-slider-one-text">
                 
@@ -33,6 +34,7 @@
                 </div><!-- .site-slider-slider-one-text -->                
 
     		</div><!-- .site-slider-slider-one -->
+            <img src="http://i.imgur.com/zrthmFR.png" id="backGradient"/>
         
     	</div><!-- #Responsive-Container -->           
     
