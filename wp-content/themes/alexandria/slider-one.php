@@ -6,27 +6,51 @@
             
             	<div class="site-slider-slider-one-image">
                     
-                    <img src="http://i.imgur.com/mlHhcIO.png" id="iphoneImage" />
-                    <img src="http://i.imgur.com/mnZ59Ji.gif" id="animatedGif" />
+                    <img src="http://i.imgur.com/TuNA35r.png" id="iphoneImage" />
+                    <div id="slideshow">
+                        <img src="http://i.imgur.com/vdOgDhe.png" alt="" class="active" />
+                        <img src="http://i.imgur.com/Jsz6V0F.png" alt="" />
+                        <img src="http://i.imgur.com/O19PzTB.png" alt="" />
+                        <img src="http://i.imgur.com/Kz1zirU.png" alt="" />
+                    </div>
+
+                    <script type='text/javascript'>
+                        
+                        function slideSwitch() {
+                            
+                            var $active = $('#slideshow IMG.active');
+
+                            if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+                            var $next =  $active.next().length ? $active.next()
+                                : $('#slideshow IMG:first');
+
+                            $active.addClass('last-active');
+                                
+                            $next.css({opacity: 0.0})
+                                .addClass('active')
+                                .animate({opacity: 1.0}, 1000, function() {
+                                    $active.removeClass('active last-active');
+                                });
+                        }
+
+                        $(function() {
+                            setInterval( "slideSwitch()", 5000 );
+                        });
+
+                    </script>
+
+
 
                 </div> <!-- .site-slider-slider-one-image -->
                 
             	<div class="site-slider-slider-one-text">
                 
                 	<h1 class="site-slider-slider-one-text-heading">
-						Password Keeping that Saves You Tons of Energy                  
+				        Mobile<br>password keeping<br>done right.
                     </h1>
-                    <p class="site-slider-slider-one-text-description">
-                               Valt is a simple and speedy password manager.  No 
-                                other app allows you to enter credentials and login 
-                                with them faster.
-                    </p>
-                    <p class="site-slider-slider-one-text-description">
-                                Valt uses autocompletion, instant form filling, auto 
-                                submitting, easy URL saving, and many other features 
-                                to get you back to living life. Valt’s ironclad security 
-                                keeps you worry-free.
-                    </p>
+                 
+                 
                     
                     
                     <p id="downloadButton"><a href="itms-apps://itunes.apple.com/app/id791566527?at=10l6dK">Get the Free App</a></p>
@@ -34,8 +58,10 @@
                 </div><!-- .site-slider-slider-one-text -->                
 
     		</div><!-- .site-slider-slider-one -->
-            <img src="http://i.imgur.com/zrthmFR.png" id="backGradient"/>
         
     	</div><!-- #Responsive-Container -->           
     
     </div><!-- #banner -->
+
+
+        
