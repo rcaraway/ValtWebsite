@@ -11,7 +11,8 @@
 <head>
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
+	<!-- <meta name="viewport" content="width=device-width"> -->
+    <meta name="viewport" content="initial-scale=0.25">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -33,6 +34,8 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
+<div id="wrapper-one">
+
 <div id="headerBackground">
 
             <ul id="headerList">  
@@ -49,7 +52,7 @@
 
     </div>
 
-<div id="wrapper-one">
+
 
     <div id="page" class="hfeed site">
 	

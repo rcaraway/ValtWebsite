@@ -10,6 +10,17 @@
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
+	<style type="text/css">
+	#page{
+		background: transparent;
+		background-color: #fff;
+
+	}
+	#wrapper-one
+	{
+		height:4000px;
+	}
+	</style>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
