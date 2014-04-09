@@ -23,27 +23,31 @@
 <?php
 if ( is_home() ) { ?>
     <div id="Vision">
-        <div id="VisionIcon"><img src="/iPhoneTablet.png"></div>
-         <p id="VisionMessage">We wanted a pleasant password keeper we could use on the fly.  We couldn't find a good one, so we built Valt. <a id="LearnMore" href="/boop">Learn More</a> </p>
+         <p id="VisionMessage">Valt is more than just password management.  It's saving time so you can return to what's important. It's not having to fight a confusing interface. <br>It's <i>demanding more out of software.</i> </p>
+        <div id="LearnMore"><a href="/boop">Learn More</a></div>
     </div>
 <?php } else {
     // This is not a homepage
 }
 ?>
 
+<footer  class="site-footer" >
+    
+
+            <ul id="BottomMenu">
+                <li><a href="<?php echo site_url('/about', 'http')?>">About</a></li>
+                <li><a href="http://www.robcaraway.wordpress.com">Blog</a></li>
+                <li><a href="<?php echo site_url('/faq', 'http')?>">FAQ</a></li>
+                <li><a href="<?php echo site_url('/support', 'http')?>">Support</a></li>
+                <li><a href="<?php echo site_url('/terms-of-service', 'http')?>">Press Kit</a></li>
+                <li id="copyright">&copy; Tapsmith, LLC 2014</li>
+            </ul>
+
+    </footer><!-- #colophon -->
+
 
 </div><!-- #wrapper-one -->
-</div><!-- #wrapper-two -->
-</div><!-- #wrapper-three -->
 
-<?php 
-		$footer_layout = 'one';								
-		get_template_part( 'footer', $footer_layout );
-								
-	?>
-    <!-- Footer ends Here -->
-
-<?php wp_footer(); ?>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 
     
 
-    <div  class="site-footer" >
+    <footer  class="site-footer" >
     
 
             <ul id="BottomMenu">
@@ -13,4 +13,4 @@
                 <li id="copyright">&copy; Tapsmith, LLC 2014</li>
             </ul>
 
-	</div><!-- #colophon -->
+	</footer><!-- #colophon -->
